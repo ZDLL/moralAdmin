@@ -1,0 +1,40 @@
+//变量
+$background-clor:#fff;
+$padding:20px;
+$boder:1px #ebeef5 solid;
+$action_color:rgba(50, 197, 255, 1);//字体颜色
+$item_error_color:#FA9A00; //错误提示颜色
+$table_header_back_color:rgba(30, 34, 38, 1);
+
+//混合器
+@mixin border-radius($pixel) {
+    -moz-border-radius: $pixel;
+    -webkit-border-radius: $pixel;
+    border-radius: $pixel;
+}
+
+//插值
+
+
+//可继承的class
+%extreme {//占位符
+    padding: 20px 20px;
+    @include border-radius(8px);
+    overflow: hidden;
+    background-color: #fff;
+    margin-top: 20px;
+};
+%pagecont{//内容的样式
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    @include border-radius(4px);
+    // margin-bottom: 20px;
+}
+%tableborder{//table的样式
+    border-top: 1px solid #ebeef5;
+    border-left: 1px solid #ebeef5;
+    @include border-radius(8px);
+    overflow: hidden;
+    margin-top: 20px;
+}

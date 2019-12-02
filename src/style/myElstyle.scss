@@ -1,0 +1,110 @@
+// $item_error_color:"#FA9A00"; //错误提示颜色
+// $action_color:"#01C9FE";
+
+#app{
+    .el-form-item__error{
+        color: $item_error_color;
+        font-size: 12px;
+        line-height: 1;
+        padding-top: 6px;
+        position: absolute;
+        top: 100%;
+        left: 32px;
+    }
+    .el-input__inner:hover {
+        border-color: #C0C4CC;
+    }
+    .el-input.is-active .el-input__inner, .el-input__inner:focus {
+        border-color: $action_color;
+        outline: 0;
+    }
+    .el-button--mini{
+        padding: 7px 15px;
+        color: $action_color;//rgba(50, 197, 255, 1);
+        background: transparent;
+        border-color: rgba(50, 197, 255, 0.05);
+        -webkit-box-shadow: 0px 0px 10px 5px rgba(50, 197, 255, 0.3) inset;
+        box-shadow: 0px 0px 10px 5px rgba(50, 197, 255, 0.3) inset;
+    }
+    .el-table thead {
+        color:$action_color ;
+        background-color:$table_header_back_color; //rgba(30, 34, 38, 1);
+    }
+    // .el-input__inner{
+    //     padding-left: 30px;
+    // }
+    .el-input__prefix{
+        left: 8px;
+    }
+
+    /* 头部面包屑 */
+    .header_Breadcrumb{
+        margin-bottom: 30px;
+    }
+    .header_Breadcrumb i{
+        color:$action_color;// #32C5FF ;
+        margin-right: 4px;
+    }
+    /* 修改element Notification 通知 样式 */
+.el-notification{
+    background-color: #1A1C20 ;
+    border: 1px solid rgba(255, 255, 255, 0.1) ;
+  }
+  .el-notification__title{
+    color: rgba(255,255,255,.7) ;
+  }
+  
+  /* 修改elementUI page样式 */
+  .el-pagination{
+    color: rgba(255, 255, 255, .7) ;
+  }
+  .el-pagination .btn-next, .el-pagination .btn-prev{
+    background: center center no-repeat transparent ;
+    padding: 0 ;
+    color: $action_color;//rgba(50, 197, 255, 1) ;
+    border: 1px solid $action_color;//rgba(50, 197, 255, 1);
+  }
+  .el-pagination button{
+    min-width: 31.5px ;
+  }
+  .el-pagination .el-pagination__total,
+  .el-pagination .el-pagination__jump{
+    color: rgba(255, 255, 255, .7) ;
+  }
+  .el-pagination button:disabled{
+    color: rgba(50, 197, 255, .4) ;
+    border: 1px solid rgba(50, 197, 255, .4);
+  }
+  .el-pagination .el-input__inner{
+    width: 50px ;
+  }
+  .el-pagination .el-pager li.active{
+    color: $action_color;//rgba(50, 197, 255, 1) 
+  }
+  .el-pagination .el-input--suffix .el-input__inner{
+    width: 100px ;
+  }
+  .el-pagination .el-dialog, .el-pager li{
+    background-color: transparent ;
+  }
+  
+  /* elementUI loading样式 */
+  .el-loading-mask{
+    background-color: rgba(26, 28, 32,.9) ;
+  }
+  .el-loading-spinner .path{
+    stroke: $action_color;//rgba(50, 197, 255, 1) ;
+  }
+  
+  /* element tree的disabled样式 */
+  .el-tree-node[aria-disabled=true] .el-tree-node__label{
+    color: #7B7F82 ;
+  }
+  /*
+    element 下拉的字体图标颜色
+  */
+  .el-select .el-input .el-select__caret{
+    color: $action_color;//rgba(50, 197, 255, 1);
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "11807375",
+      "name": "数据中心",
+      "font_class": "jiekouguanli",
+      "unicode": "e65a",
+      "unicode_decimal": 58970
+    },
+    {
+      "icon_id": "11807496",
+      "name": "密码",
+      "font_class": "mima",
+      "unicode": "e65b",
+      "unicode_decimal": 58971
+    },
+    {
+      "icon_id": "11807497",
+      "name": "用户名",
+      "font_class": "yonghuming",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "11807498",
+      "name": "验证码",
+      "font_class": "yanzhengma",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
+      "icon_id": "11807778",
+      "name": "筛选",
+      "font_class": "shaixuan",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "11807779",
+      "name": "新增",
+      "font_class": "xinzeng",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "11807780",
+      "name": "下拉-选择",
+      "font_class": "xiala-xuanze",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "11807781",
+      "name": "确定提交",
+      "font_class": "quedingtijiao",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    },
+    {
+      "icon_id": "11807782",
+      "name": "主节点",
+      "font_class": "zhujiedian",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    },
+    {
+      "icon_id": "11807783",
+      "name": "坐标",
+      "font_class": "zuobiao",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "11807784",
+      "name": "子节点",
+      "font_class": "zijiedian",
+      "unicode": "e664",
+      "unicode_decimal": 58980
+    },
+    {
+      "icon_id": "11807902",
+      "name": "下拉-nav",
+      "font_class": "xiala-nav",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    },
+    {
+      "icon_id": "11901333",
+      "name": "查询",
+      "font_class": "chaxun",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    },
+    {
+      "icon_id": "11901334",
+      "name": "下拉x",
+      "font_class": "xialax",
+      "unicode": "e667",
+      "unicode_decimal": 58983
+    },
+    {
+      "icon_id": "11901335",
+      "name": "下拉s",
+      "font_class": "xialas",
+      "unicode": "e668",
+      "unicode_decimal": 58984
+    },
+    {
+      "icon_id": "11901342",
+      "name": "系统管理",
+      "font_class": "xitongguanli",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
+      "icon_id": "11952701",
+      "name": "重置",
+      "font_class": "zhongzhi",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    }
+  ]
+}
