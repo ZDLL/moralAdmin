@@ -1,0 +1,11 @@
+export const DATA_TARGET_LIST = "DATA_TARGET_LIST"; //获取指标列表
+export const DATA_TARGET_SELECT = "DATA_TARGET_SELECT"; //获取指标配置 //下拉列表数据
+export const DATA_TARGET_OPTIONS = "DATA_TARGET_OPTIONS"; //获取参数树状图联动数据
+export const DATA_TARGET_ADD = "DATA_TARGET_ADD"; //添加、编辑指标
+export const DATA_TARGET_CHANGE_STATUS = "DATA_TARGET_CHANGE_STATUS"; //修改指标状态
+export const DATA_TARGET_CHECK = "DATA_TARGET_CHECK"; //查看弹窗信息
+export const GET_TARGET_RULE = "GET_TARGET_RULE"; //获取指标规则列表
+export const GET_TARGET_RULETREEINFO = "GET_TARGET_RULETREEINFO"; //获取参数树状图联动数据--指标规则
+export const GET_TARGET_RULECONFIG = "GET_TARGET_RULECONFIG"; //获取指标规则配置
+export const ADD_TARGRT_RULE = "ADD_TARGRT_RULE"; //添加指标规则
+export const CHANGE_TARGRT_RULE = "CHANGE_TARGRT_RULE"; //修改指标规则状态

@@ -1,10 +1,15 @@
 //变量
-$background-clor:#fff;
+$color_fff:#fff;
 $padding:20px;
 $boder:1px #ebeef5 solid;
 $action_color:rgba(50, 197, 255, 1);//字体颜色
 $item_error_color:#FA9A00; //错误提示颜色
-$table_header_back_color:rgba(30, 34, 38, 1);
+// $table_header_back_color:rgba(30, 34, 38, 1);
+$brumColor:rgba(64, 158, 255,1);
+$tran_brumColor:rgba(64, 158, 255,.7);
+$table_back_color:$color_fff;
+
+
 
 //混合器
 @mixin border-radius($pixel) {
@@ -17,24 +22,72 @@ $table_header_back_color:rgba(30, 34, 38, 1);
 
 
 //可继承的class
-%extreme {//占位符
-    padding: 20px 20px;
-    @include border-radius(8px);
+%pageCont{ //页面中的样式
     overflow: hidden;
-    background-color: #fff;
+    margin-top: 30px;
+    @include border-radius(6px);
+    // background-color: #fff;
+}
+%setup_box{        //  树状图左右样式
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
     margin-top: 20px;
-};
-%pagecont{//内容的样式
-    background-color: #fff;
+    .setup_left,
+    .setup_right{
+        max-height: 85vh;
+        background-color: #fff;
+        padding: 0 10px 15px;
+        box-sizing: border-box;
+        @include border-radius(6px);
+    }
+    .setup_left{
+        width: 43%;
+        .ismyTree{
+            box-sizing: border-box;
+            max-height: 78vh;
+            overflow: auto;
+            padding: 0 10px 20px 0;
+        }
+    }
+    .setup_right{
+        width: 56.5%;
+        overflow-y: auto;
+        .el-form-item__content,
+        .el-input__inner {
+            width: 205px;
+        }
+    }
+}
+%pageLeftRight{ //左右分的样式
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 4px);
     padding: 20px;
-    margin-top: 20px;
-    @include border-radius(4px);
-    // margin-bottom: 20px;
-}
-%tableborder{//table的样式
-    border-top: 1px solid #ebeef5;
-    border-left: 1px solid #ebeef5;
-    @include border-radius(8px);
+    box-sizing: border-box;
     overflow: hidden;
-    margin-top: 20px;
+    margin-top: 10px;
+    @include border-radius(6px);
+    // background-color: #fff;
 }
+// %extreme {//占位符
+//     padding: 20px 20px;
+//     @include border-radius(8px);
+//     overflow: hidden;
+//     background-color: #fff;
+//     margin-top: 20px;
+// };
+// %pagecont{//内容的样式
+//     background-color: #fff;
+//     padding: 20px;
+//     margin-top: 20px;
+//     @include border-radius(4px);
+//     // margin-bottom: 20px;
+// }
+// %tableborder{//table的样式
+//     border-top: 1px solid #ebeef5;
+//     border-left: 1px solid #ebeef5;
+//     @include border-radius(8px);
+//     overflow: hidden;
+//     margin-top: 20px;
+// }

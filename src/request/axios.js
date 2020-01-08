@@ -1,11 +1,15 @@
 /**
  * axios的post请求
  */
-let loading
+import axios from "axios";
+import qs from 'qs'
 
+import { Message,Loading} from "element-ui";
+
+let loading
 function startLoading() {    //使用Element loading-start 方法
   loading = Loading.service({
-      target:document.querySelector("#searchBar"),
+      target:document.querySelector("body"),
       lock: true,
       text: '加载中……',
       background: 'rgba(255, 255, 255, 0.7)'
@@ -48,16 +52,14 @@ let sendRequest = function(url,payload,method){
       Message.error("请求错误");
       return
   });
-  
   // console.log(JSON.parse(window.localStorage.getItem("userInfo")).token)
   return new Promise((res,rej)=>{
     axios({
       method: method,
       url: url,
-      data:payload,
-      
+      data:qs.stringify(payload),
       // headers:{'Content-Type': 'application/json'}
-      headers: {"token":window.localStorage.getItem("userInfo")?JSON.parse(window.localStorage.getItem("userInfo")).token:''},
+      headers: {"Authorization":window.localStorage.getItem("userInfo")?JSON.parse(window.localStorage.getItem("userInfo")).token:''},
     }).then(data=>{
       endLoading()
       if( data.data.code && data.data.code!='10000'){
@@ -72,7 +74,6 @@ let sendRequest = function(url,payload,method){
           return;
         }
       }
-      
       res(data)
     }).catch(err=>{
       endLoading()

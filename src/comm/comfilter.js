@@ -19,15 +19,25 @@ const myFilter={
         return realVal
     },
     codeStatus(val){ //判断启用 禁用 的过滤器
-        if(!val){
-          return
-        }
-        if(val == '00001001'){
-          return '启用'
+        // if(!val){
+        //   return
+        // }
+        if(val == '00001001' || val == 1){
+          return '生效'
         }else{
-          return '禁用'
+          return '失效'
         }
+    },
+    statusBtnTxt(val){
+      // if(!val){
+      //   return
+      // }
+      if(val == '00001001' || val == 1){
+        return '禁用'
+      }else{
+        return '启用'
       }
+    } 
 }
 
 export default myFilter  

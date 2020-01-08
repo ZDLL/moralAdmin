@@ -3,6 +3,7 @@
             v-if="packTotal" //总条数
             :key="packTotal" //总条数
             :pageTotal="packTotal"
+            :pageCurrent="pageCurrent"   //当前页
             @handleCurrent="handleCurrentFunc"  //获取翻页的方法
           ></myPackage> 
   -->
@@ -27,6 +28,11 @@ export default {
       total: this.pageTotal,
       currentPage: this.pageCurrent //默认第一页开始
     };
+  },
+  watch:{
+    pageCurrent(newVal){
+      this.currentPage = newVal;
+    }
   },
   props: {
     pageTotal: {

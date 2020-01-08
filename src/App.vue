@@ -4,12 +4,25 @@
   </div>
 </template>
 <style lang="scss">
-@import '@/style/myElstyle.scss';
+// @import '@/style/myElstyle.scss';
 @import '@/style/com.scss';
+@import "./assets/fontIcon/iconfont.css";
 #app {
   box-sizing: border-box;
   height: 100%;
-
+  color: #2c3e50;
+  
+  .el-table thead {
+    th {
+      font-weight: 800;
+      color: #666;
+      text-align: center;
+    }
+  }
+  .home{
+    height: 100%;
+    // background-color: #eee;
+  }
 }
 /* 页面内自定义按钮 */
 .html_btn{
